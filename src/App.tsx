@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Logo } from './Logo';
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import { Home } from './Home';
 import { About } from './About';
 import { GetHelp } from './GetHelp';
@@ -10,7 +10,7 @@ import { Help } from './Help';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Route path="/" exact>
           <Home />
         </Route>
@@ -23,7 +23,7 @@ function App() {
         <Route path="/help">
           <Help />
         </Route>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
