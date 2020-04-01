@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // bad boys, bad boys, what you gonna do, what you gonna do when they come for you
 let globalItems = ["Bananen - 2 Stück", "Milch - 5L", "Nutella - 100g"] as string[]; 
-let globalRecipe = "";
+let globalRecipe = "./img/recipe.jpg";
 
 export function useItems() {
     const [items, setItems] = useState(globalItems);
