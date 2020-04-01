@@ -7,13 +7,17 @@ export const OrderStatus = () => {
     const history = useHistory();
 
     React.useEffect(() => {
-        setTimeout(() => setState("In Bearbeitung"), 5_000);
-        setTimeout(() => setState("Auf dem Weg"), 10_000);
-        setTimeout(() => history.push("/arrival"), 15_000);
+        const timers = [
+        setTimeout(() => setState("In Bearbeitung"), 5_000),
+        setTimeout(() => setState("Auf dem Weg"), 10_000),
+        setTimeout(() => history.push("/arrival"), 15_000),
+        ];
+
+        return () => timers.forEach(t => clearTimeout(t));
     }, []);
 
     const { items } = useItems();
-    
+
     return <div>
         <h4>Bestellstatus: {state} </h4>
         <ul>
