@@ -12,7 +12,11 @@ export const Home = () => (
         <Link to="/get-help">
             <h2>Hilfe</h2>
         </Link>
-
+        <br/>
+        <br/>
+        <sub>
+            Icons by <a href="https://www.flaticon.com/authors/freepik">Freepik@Flaticon</a>
+        </sub>
         <Link to="/about">
             <h4 id="about-link">Anleitung</h4>
         </Link>
