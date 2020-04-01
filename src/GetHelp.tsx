@@ -1,8 +1,15 @@
 import * as React from "react";
-import "./GetHelp.css";
+import { Link } from "react-router-dom";
 
 export const GetHelp = () => (
     <div>
-        <h2>Bekomme Hilfe</h2>
+        <input type="text" placeholder="Name" />
+        <input type="number" placeholder="Alter" step="1" min="0" />
+        <input type="text" placeholder="Straße, Hausnummer" />
+        <input type="text" placeholder="Ort" />
+        <input type="text" placeholder="Postleitzahl" />
+        <input type="text" placeholder="Telefonnummer" />
+        <input type="text" placeholder="Email (optional)" />
+        <Link to="/orders"><h4>Weiter</h4></Link>
     </div>
 )

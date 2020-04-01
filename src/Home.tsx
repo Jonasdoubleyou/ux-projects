@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 
 export const Home = () => (
     <div>
-        <Logo />
-
         <h3>Ich möchte...</h3>
         <Link to="/help">
             <h2>helfen</h2>
@@ -16,7 +14,7 @@ export const Home = () => (
         </Link>
 
         <Link to="/about">
-            <h4 id="about-link">Info</h4>
+            <h4 id="about-link">Anleitung</h4>
         </Link>
     </div>
 )
