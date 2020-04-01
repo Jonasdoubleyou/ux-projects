@@ -4,7 +4,10 @@ import { useRecipe } from "./state";
 
 export const Recipe = () => {
     const input = React.useRef<HTMLInputElement>(null);
-    const { recipe, setRecipe } = useRecipe();
+
+    const [image, setImage] = React.useState("");
+
+    const { setRecipe } = useRecipe();
 
     function checkFile() {
         if (!input || !input?.current?.files || input?.current?.files?.length < 1) return;
@@ -14,13 +17,14 @@ export const Recipe = () => {
         reader.onloadend = () => {
           const base64data = reader.result as string;
           setRecipe(base64data);
+          setImage(base64data);
           console.log(base64data);
         };
       }
     return (<div>
         <h4 onClick={() => input.current?.click()}>Foto hochladen</h4>
-        {recipe && <>
-            <img src={recipe} style={{ width: "90%", height: "auto" }} />
+        {image && <>
+            <img src={image} style={{ width: "90%", height: "auto" }} />
             <Link to="/delivery">
                 <h4>Liefern</h4>
             </Link>
