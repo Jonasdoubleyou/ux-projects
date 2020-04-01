@@ -17,15 +17,15 @@ export const Buy = () => {
     const { items } = useItems();
 
     const allDone = items.every(item => chosen[item]);
-    const noneDone = !items.some(item => chosen[item]);
+    const someDone = items.some(item => chosen[item]);
 
     return (
     <div>
         <ul className="list">
             {items.map(item => <Item item={item} />)}
         </ul>
-        {noneDone && <i>Klicke auf gekaufte Sachen!</i>}
-        {allDone && <Link to="/recipe"><h4>Gekauft!</h4></Link>}
+        {!someDone && <i>Klicke auf gekaufte Sachen!</i>}
+        {someDone && <Link to="/recipe"><h4>Gekauft!</h4></Link>}
     </div>
     );
 };

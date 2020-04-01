@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 
 export const Deliver = () => (
@@ -18,6 +19,6 @@ export const Deliver = () => (
             </li>
         </ul>
 
-        <h4>Fertig!</h4>
+        <Link to="/"><h4>Fertig!</h4></Link>
     </div>
 )

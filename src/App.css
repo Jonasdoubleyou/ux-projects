@@ -1,7 +1,16 @@
+body {
+  --background: #87FFDA;
+  --accent: #25604E;
+  --text: #333333;
+
+  background-color: var(--background);
+}
+
 .App {
   text-align: center;
   font-family: 'Baloo 2';
   font-size: 20px;
+  color: var(--text);
 }
 
 a, a:hover,  a:active  {
@@ -9,8 +18,8 @@ a, a:hover,  a:active  {
 }
 
 h2 {
-  background-color: #63ca44;
-  color: white;
+  background-color: var(--text);
+  color: var(--background);
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 0px;
@@ -18,21 +27,20 @@ h2 {
 }
 
 h4 {
-  background-color: #63ca44;
-  color: white;
+  background-color: var(--text);
+  color: var(--background);
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 ul {
   list-style: none;
-  color: #63ca44;
   padding: 0;
 }
 
 li { 
   padding: 10px;
-  border-bottom: thin solid #63ca44;
+  border-bottom: thin solid var(--text);
 }
 
 input {
@@ -40,12 +48,14 @@ input {
   padding: 10px;
   margin: 30px;
   width: calc(100% - 80px);
-  border: 2px solid #63ca44;
+  border: 2px solid var(--text);
+  background-color: var(--background);
+  border-radius: 5px 5px 5px;
   font-size: 20px;
 }
 
 input::placeholder {
-  color: #63ca44;
+  color: var(--accent);
 }
 
 .large {
@@ -55,16 +65,13 @@ input::placeholder {
   margin-bottom: 10px;
 }
 
-.list > li {
- 
-}
-
 .back {
-  background-color: rgb(170, 170, 170);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .selected {
-  color: white;
-  background-color: #63ca44;
+  color: var(--text);
+  background-color: var(--background);
   text-decoration: line-through;
 }
