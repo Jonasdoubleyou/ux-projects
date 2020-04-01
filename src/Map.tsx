@@ -46,7 +46,7 @@ const Needle = ({ latitude, longitude, index, onClick }: { latitude: number, lon
           viewBox="0 0 24 24"
           style={{
             cursor: 'pointer',
-            fill: '#d00',
+            fill: 'var(--text)',
             stroke: 'none',
             transform: `translate(${-SIZE / 2}px,${-SIZE}px)`
           }}
