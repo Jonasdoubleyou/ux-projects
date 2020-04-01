@@ -6,7 +6,7 @@ export const Map = () => {
 
     return (
       <div onClick={() => history.push("/show-list")}>
-        <img src="/static/img/map.png" style={{ width: "100%", height: "auto" }} />
+        <img src="./img/map.png" style={{ width: "100%", height: "auto" }} />
       </div>
     );
 };
