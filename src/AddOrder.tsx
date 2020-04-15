@@ -20,7 +20,7 @@ export const AddOrder = () => {
     return <div>
         <ul className="list">
             <input ref={inp} type="text" placeholder="Warenname" onKeyDown={submit} />
-            {items.map(item => <li onClick={() => removeItem(item)}>{item}</li>)}
+            {items.map(item => <li onClick={() => removeItem(item)}>{item} [X]</li>)}
             {!!items.length && <Link to="/check-order"><h4>Weiter</h4></Link>}
         </ul>
     </div>

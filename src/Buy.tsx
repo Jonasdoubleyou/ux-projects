@@ -25,7 +25,7 @@ export const Buy = () => {
             {items.map(item => <Item item={item} />)}
         </ul>
         {!someDone && <i>Klicke auf gekaufte Sachen!</i>}
-        {someDone && <Link to="/recipe"><h4>Gekauft!</h4></Link>}
+        {someDone && <Link to="/recipe"><h4>Einkauf fertig!</h4></Link>}
     </div>
     );
 };

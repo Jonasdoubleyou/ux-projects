@@ -22,7 +22,7 @@ export const Recipe = () => {
         };
       }
     return (<div>
-        <h4 onClick={() => input.current?.click()}>Foto hochladen</h4>
+        <h4 onClick={() => input.current?.click()}>Kassenzettel hochladen</h4>
         {image && <>
             <img src={image} style={{ width: "90%", height: "auto" }} />
             <Link to="/delivery">
