@@ -7,6 +7,7 @@ export const CheckOrder = () => {
 
     return <div>
         <ul>
+         <li><i>Überprüfe deine Bestellung, bevor du sie abschickst...</i></li>
          {items.map(item => <li>{item}</li>)}
         </ul>
         <Link to="/add-order"><h4 className="back">Bearbeiten</h4></Link>
