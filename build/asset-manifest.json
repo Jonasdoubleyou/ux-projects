@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ux-projects/build/static/css/main.0b1f57df.chunk.css",
-    "main.js": "/ux-projects/build/static/js/main.44ac4c0d.chunk.js",
-    "main.js.map": "/ux-projects/build/static/js/main.44ac4c0d.chunk.js.map",
+    "main.js": "/ux-projects/build/static/js/main.62fbffb8.chunk.js",
+    "main.js.map": "/ux-projects/build/static/js/main.62fbffb8.chunk.js.map",
     "runtime-main.js": "/ux-projects/build/static/js/runtime-main.bc788b38.js",
     "runtime-main.js.map": "/ux-projects/build/static/js/runtime-main.bc788b38.js.map",
     "static/js/2.1fbcad2e.chunk.js": "/ux-projects/build/static/js/2.1fbcad2e.chunk.js",
     "static/js/2.1fbcad2e.chunk.js.map": "/ux-projects/build/static/js/2.1fbcad2e.chunk.js.map",
     "index.html": "/ux-projects/build/index.html",
-    "precache-manifest.f659a47e61235bdf3ec5aeeebf372dbc.js": "/ux-projects/build/precache-manifest.f659a47e61235bdf3ec5aeeebf372dbc.js",
+    "precache-manifest.cf87ed82d6fcc5548912ab0793184908.js": "/ux-projects/build/precache-manifest.cf87ed82d6fcc5548912ab0793184908.js",
     "service-worker.js": "/ux-projects/build/service-worker.js",
     "static/css/main.0b1f57df.chunk.css.map": "/ux-projects/build/static/css/main.0b1f57df.chunk.css.map",
     "static/js/2.1fbcad2e.chunk.js.LICENSE.txt": "/ux-projects/build/static/js/2.1fbcad2e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bc788b38.js",
     "static/js/2.1fbcad2e.chunk.js",
     "static/css/main.0b1f57df.chunk.css",
-    "static/js/main.44ac4c0d.chunk.js"
+    "static/js/main.62fbffb8.chunk.js"
   ]
 }
